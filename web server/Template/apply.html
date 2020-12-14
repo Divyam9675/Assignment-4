@@ -1,0 +1,33 @@
+{{template "header"}}
+
+<h1  style="color:blue;">APPLY  </h1>
+
+
+<nav>
+  <ul>
+      <li><a href="/index">INDEX</a></li>
+      <li><a href= "/about">ABOUT</a></li>
+      <li><a href ="/contact">CONTACT</a></li>
+      <li><a href="/apply">APPLY</a></li>
+  </ul>
+</nav>
+
+{{if .FirstName}}
+
+<h1  style="color:brown;">Your name is {{.FirstName}}  </h1>
+
+{{end}}
+
+
+
+
+
+<form action = "/apply" method="GET">
+
+    <label for = "fnm">First Name</label>
+
+      <input type = "text" name ="fname" id ="fnm">
+
+      <input type="submit">
+      
+</form>

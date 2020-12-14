@@ -1,0 +1,27 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {{if .FirstName}}
+    
+    <title>{{.FirstName}}</title>
+    {{else}}
+    <title>{{.Title}}</title>
+
+    {{end}} 
+    <link rel= "stylesheet" href="/pub/css/main.css">
+
+</head>
+
+{{end}}
+
+<body>
+{{define "footer"}}
+
+    
+</body>
+</html>
+{{end}}
